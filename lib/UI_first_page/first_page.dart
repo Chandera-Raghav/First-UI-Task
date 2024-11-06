@@ -32,13 +32,13 @@ class FirstPageScreen extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 10),
                       margin: const EdgeInsets.symmetric(horizontal: 15),
                       width: 340,
-                      height: 250,
+                      height: 190,
                       decoration: BoxDecoration(
                           border: Border.all(width: 2),
                           color: Colors.black.withOpacity(0.1)),
                       child: const Center(
                         child: Text(
-                          "Pavlova is a meringue-based dessert named afetr the Russin baillerine Anna Pavlova. Pavlova features a crisp crust and soft, light inside, topped with fruit and whipped cream.",
+                          "Pavlova is a meringue-based dessert named afetr the Russin ballerine Anna Pavlova. Pavlova features a crisp crust and soft, light inside, topped with fruit and whipped cream.",
                           style: TextStyle(fontSize: 22, color: Colors.grey),
                           textAlign: TextAlign.center,
                         ),
@@ -47,58 +47,74 @@ class FirstPageScreen extends StatelessWidget {
                   ),
                   Center(
                     child: Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+                      margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 7),
                       width: 340,
-                      height: 40,
+                      height: 35,
                       decoration: BoxDecoration(
                         border: Border.all(width: 2),
                         color: Colors.black.withOpacity(0.1)
                       ),
-                      child: Center(
-                        child: Container(
-                          margin: const EdgeInsets.fromLTRB(0, 0, 15, 0),
-                          width: 300,
-                          height: 30,
-                          child: const Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              SizedBox(
-                                width: 150,
-                                height: 30,
-                                child: Row(
-                                  children: [
-                                    Icon(Icons.star_purple500_sharp, color: Colors.grey,),
-                                    Icon(Icons.star_purple500_sharp,color: Colors.grey,),
-                                    Icon(Icons.star_purple500_sharp, color: Colors.grey,),
-                                    Icon(Icons.star_purple500_sharp, color: Colors.grey,),
-                                    Icon(Icons.star_purple500_sharp, color: Colors.grey,)
-                                  ],
-                                ),
-                              ),
-                              SizedBox(
-                                width: 150,
-                                height: 25,
-                                child: Text("170 Reviews", style: TextStyle(fontSize: 18, color: Colors.grey),),
-                              ),
-                             ],
+                      child: const Row(
+
+                        children: [
+                          SizedBox(
+                            width: 150,
+                            height: 30,
+                            child: Row(
+                              children: [
+                                Icon(Icons.star_purple500_sharp, color: Colors.grey,),
+                                Icon(Icons.star_purple500_sharp,color: Colors.grey,),
+                                Icon(Icons.star_purple500_sharp, color: Colors.grey,),
+                                Icon(Icons.star_purple500_sharp, color: Colors.grey,),
+                                Icon(Icons.star_purple500_sharp, color: Colors.grey,)
+                              ],
+                            ),
                           ),
-                        ),
+                          SizedBox(
+                            width: 150,
+                            height: 25,
+                            child: Text("170 Reviews", style: TextStyle(fontSize: 18, color: Colors.grey),),
+                          ),
+                         ],
                       ),
                     ),
                   ),
-                  Container(
-                    margin: const EdgeInsets.all(1),
-                    width: 340,
-                    height: 150,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black.withOpacity(0.1), width: 2)
-                    ),
-                    child: Row(
-                      children: [
-                        Column(),
-                        Column(),
-                        Column()
-                      ],
+                  Center(
+                    child: Container(
+                      margin: const EdgeInsets.all(15),
+                      padding: const EdgeInsets.all(6),
+                      width: 340,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        border: Border.all(width: 2),
+                        color: Colors.black.withOpacity(0.1)
+                      ),
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Column(
+                            children: [
+                              Icon(Icons.kitchen, color: Colors.green, weight: 20,),
+                              Text("PREPE:", style: TextStyle(fontSize: 20, color: Colors.grey),),
+                              Text("25 min", style: TextStyle(fontSize: 20,color: Colors.grey),)
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Icon(Icons.timer_outlined, color: Colors.green, weight: 20,),
+                              Text("COOK:", style: TextStyle(fontSize: 20, color: Colors.grey),),
+                              Text("1 hr", style: TextStyle(fontSize: 20, color: Colors.grey),)
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Icon(Icons.restaurant, color: Colors.green, weight: 20,),
+                              Text("FEEDS:", style: TextStyle(fontSize: 20, color: Colors.grey),),
+                              Text("4-6", style: TextStyle(fontSize: 20, color: Colors.grey),)
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   )
                 ],
